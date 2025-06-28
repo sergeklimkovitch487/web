@@ -18,14 +18,19 @@
 	box-sizing: border-box;
 }
 
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
 body {
 	min-width: 350px;
-	overflow-y: scroll;
 	font-family: 'Trebuchet MS';
 	line-height: 1.6;
 	color: var(--text);
 	background-color: #fffef6;
-	overflow-x: hidden;
 }
 
 /* Header & Navigation */
@@ -189,6 +194,7 @@ footer {
 
 	.nav-links a {
 		font-size: 1.2rem;
+		line-height: 0.5;
 	}
 
 	.nav-container {
@@ -253,7 +259,7 @@ footer {
 	font-weight: bold;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
-	height: 60px;
+	height: auto;
 }
 
 .nav-links a:hover {
