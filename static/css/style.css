@@ -145,6 +145,10 @@ footer {
 	background-color: #fffef6;
 }
 
+.header-footer {
+	height: 175px;
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
 	.hamburger {
@@ -153,9 +157,13 @@ footer {
 		height: 60px;
 	}
 
+	.header-footer {
+		height: 85px;
+	}
+
 	.nav-links {
 		position: fixed;
-		top: 241px;
+		top: 150px;
 		left: -100%;
 		width: 100%;
 		height: calc(100vh - 80px);
