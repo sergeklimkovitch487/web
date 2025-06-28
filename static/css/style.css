@@ -19,6 +19,7 @@
 }
 
 body {
+	min-width: 350px;
 	overflow-y: scroll;
 	font-family: 'Trebuchet MS';
 	line-height: 1.6;
@@ -41,6 +42,7 @@ header {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 20px;
+	position: relative;
 }
 
 .nav-container {
@@ -163,7 +165,7 @@ footer {
 
 	.nav-links {
 		position: fixed;
-		top: 150px;
+		top: 107px;
 		left: -100%;
 		width: 100%;
 		height: calc(100vh - 80px);
@@ -187,6 +189,16 @@ footer {
 
 	.nav-links a {
 		font-size: 1.2rem;
+	}
+
+	.nav-container {
+		top: 40px;
+		right: 29px;
+		position: absolute;
+	}
+
+	.container {
+		padding-bottom: 25px;
 	}
 }
 
