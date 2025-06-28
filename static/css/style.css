@@ -195,7 +195,7 @@ footer {
 
 	.nav-links a {
 		font-size: 1.2rem;
-		line-height: 0.5;
+		line-height: 1;
 	}
 
 	.nav-container {
@@ -254,7 +254,7 @@ footer {
 	float: left;
 	color: #f2f2f2;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 6px 16px;
 	text-decoration: none;
 	font-size: 14px;
 	font-weight: bold;
@@ -271,4 +271,12 @@ footer {
 .nav-links a.active {
 	background-color: #fffef6;
 	color: black;
+}
+
+a.customLink:link {
+  color: #7979f2;
+}
+
+a.customLink:visited {
+  color: #88408c;
 }
