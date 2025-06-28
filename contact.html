@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact | Flourishing Mind Counselling</title>
+	<link rel="stylesheet" href="static/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+	<main>
+		<!-- Header & Navigation -->
+		<header style="background-color: #480048;">
+			<div class="container">
+				<a href="#" class="logo">
+					<img src="static/images/Website Header.png" style="height: 176px;margin: 0 auto;margin-top: 22px;" />
+				</a>
+				<nav class="nav-container">
+
+					<button class="hamburger" id="hamburger">
+						<i class="fas fa-bars" style="color:#fffef6;"></i>
+					</button>
+					<div class="nav-links" id="nav-links">
+	<a href="/home" id="topnav-home">Home</a>
+	<a href="/therapist" id="topnav-therapist">Therapist</a>
+	<a href="/services" id="topnav-services">Services</a>
+	<a href="/resources" id="topnav-resources">Resources</a>
+	<a href="/blogs" id="topnav-blogs">Blogs</a>
+	<a href="/booking" id="topnav-booking">Booking</a>
+	<a href="/contact" id="topnav-contact" class="active">Contact</a>
+	<a href="/join-our-team" id="topnav-join-our-team">Join Our Team</a>
+</div>
+				</nav>
+			</div>
+		</header>
+		<div id="body-content" style="text-align: justify;">
+
+		
+
+<style>
+	form#contactUsForm {
+		max-width: 500px;
+		margin: 0 auto;
+		background: #fff;
+		padding: 20px;
+		border-radius: 12px;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.form-group {
+		margin-bottom: 15px;
+	}
+
+	label {
+		display: block;
+		margin-bottom: 6px;
+		font-weight: bold;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	textarea {
+		width: 100%;
+		padding: 10px;
+		border: 1px solid #ccc;
+		border-radius: 8px;
+		font-size: 16px;
+	}
+
+	textarea {
+		resize: vertical;
+		min-height: 100px;
+	}
+
+	button[type="submit"] {
+		background-color: #007bff;
+		color: white;
+		padding: 12px 20px;
+		border: none;
+		border-radius: 8px;
+		font-size: 16px;
+		cursor: pointer;
+		width: 100%;
+		transition: background-color 0.3s ease;
+	}
+
+	button[type="submit"]:hover {
+		background-color: #0056b3;
+	}
+
+	.success-message {
+		text-align: center;
+		margin-top: 15px;
+		font-weight: bold;
+		font-size: 21px;
+		color: green;
+		display: none;
+	}
+
+	@media (max-width: 600px) {
+		form#contactUsForm {
+			padding: 15px;
+		}
+
+		button[type="submit"] {
+			padding: 10px;
+			font-size: 15px;
+		}
+	}
+
+	.map-container {
+		position: relative;
+		width: 100%;
+		padding-bottom: 56.25%;
+		/* 16:9 Aspect Ratio */
+		height: 0;
+		overflow: hidden;
+		border-radius: 12px;
+	}
+
+	.map-container iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border: 0;
+	}
+
+	.spinner {
+		display: none;
+		width: 16px;
+		height: 16px;
+		border: 2px solid #fff;
+		border-top: 2px solid transparent;
+		border-radius: 50%;
+		margin-left: 10px;
+		animation: spin 0.8s linear infinite;
+		vertical-align: middle;
+	}
+
+	@keyframes spin {
+		to {
+			transform: rotate(360deg);
+		}
+	}
+
+	.loading .btn-text {
+		opacity: 0.6;
+	}
+
+	.loading .spinner {
+		display: inline-block;
+	}
+</style>
+
+<div style="text-align: center;">
+	<h1>Offers virtual counselling to clients accross Ontario</h1>
+	<div class="map-container">
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14720460.692556493!2d-97.5!3d50.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd98e3ae773e31f%3A0x5b5a1d51b5b7c01c!2sOntario!5e0!3m2!1sen!2sca!4v1714861509047!5m2!1sen!2sca"
+			allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+		</iframe>
+	</div>
+	<h1>Booking</h1>
+	Book <a href="/booking">here</a>
+	<h1>Phone number</h1>
+	
+	<h1>Email</h1>
+	<a href="mailto:"></a>
+	<br />
+	<br />
+	<br />
+	<h1>Send us a message</h1>
+	<form enctype="text/plain" id="contactUsForm">
+		<div class="form-group">
+			<label for="name">Full Name</label>
+			<input type="text" id="name" name="name"  />
+		</div>
+		<div class="form-group">
+			<label for="email">Email Address</label>
+			<input type="email" id="email" name="email"  />
+		</div>
+		<div class="form-group">
+			<label for="subject">Subject</label>
+			<input type="text" id="subject" name="subject"  />
+		</div>
+		<div class="form-group">
+			<label for="message">Message</label>
+			<textarea id="message" name="message" ></textarea>
+		</div>
+		<div class="form-group">
+			<div class="form-group">
+				<button type="submit" id="submitBtn">
+					<span class="btn-text">Send Message</span>
+					<span class="spinner" id="spinner"></span>
+				</button>
+			</div>
+		</div>
+		<div class="success-message" id="successMsg">Thank you! Your message has been sent.</div>
+	</form>
+
+	<script>
+		const form = document.getElementById('contactUsForm');
+		const successMsg = document.getElementById('successMsg');
+		const submitBtn = document.getElementById('submitBtn');
+
+		form.addEventListener('submit', async function(e) {
+			e.preventDefault();
+
+			// Show spinner
+			submitBtn.classList.add('loading');
+
+
+
+
+			const formData = new FormData(form);
+			const data = Object.fromEntries(formData.entries());
+
+			const response = await fetch('/submit-contact-form', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify(data),
+			});
+
+			if (response.ok) {
+				submitBtn.classList.remove('loading');
+				successMsg.style.display = 'block';
+				form.reset();
+			} else {
+				submitBtn.classList.remove('loading');
+				alert('Error: something went wrong');
+			}
+		});
+	</script>
+
+	
+	</main>
+
+	<footer>
+		<div style="text-align: center;">
+			<img id="footerLogo" src="static/images/Main Site - Website Footer.png" style="height: 175px;    margin-top: 60px;"/>
+		</div>
+	</footer>
+	<br />
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			// Mobile Menu Toggle
+			const hamburger = document.getElementById('hamburger');
+			const navLinks = document.getElementById('nav-links');
+
+			hamburger.addEventListener('click', function () {
+				navLinks.classList.toggle('active');
+				if (navLinks.classList.contains('active')) {
+					hamburger.innerHTML = '<i class="fas fa-times" style="color: #fffef6;"></i>'
+					document.body.style.overflowY = 'scroll';
+					document.body.style.position = 'fixed';
+					document.body.style.width = '100%';
+				} else {
+					hamburger.innerHTML = '<i class="fas fa-bars" style="color: white;"></i>'
+					document.body.style.overflowY = '';
+					document.body.style.position = '';
+					document.body.style.width = '';
+
+				}
+			});
+
+			// Close menu when clicking on a link
+			document.querySelectorAll('.nav-links a').forEach(link => {
+				link.addEventListener('click', () => {
+					navLinks.classList.remove('active');
+					hamburger.innerHTML = '<i class="fas fa-bars" style="color: white;"></i>';
+				});
+			});
+
+			// Sticky header on scroll
+			window.addEventListener('scroll', function () {
+				const header = document.querySelector('header');
+				header.classList.toggle('sticky', window.scrollY > 0);
+			});
+
+			// Scroll animations
+			const fadeElements = document.querySelectorAll('.fade-in');
+
+			const fadeInOnScroll = function () {
+				fadeElements.forEach(element => {
+					const elementTop = element.getBoundingClientRect().top;
+					const windowHeight = window.innerHeight;
+
+					if (elementTop < windowHeight - 100) {
+						element.style.opacity = '1';
+						element.style.transform = 'translateY(0)';
+					}
+				});
+			};
+
+			// Initialize elements as invisible
+			fadeElements.forEach(element => {
+				element.style.opacity = '0';
+				element.style.transform = 'translateY(20px)';
+				element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+			});
+
+			// Check on load and scroll
+			window.addEventListener('load', fadeInOnScroll);
+			window.addEventListener('scroll', fadeInOnScroll);
+
+			const mediaQuery = window.matchMedia("(max-width: 768px)");
+
+			function handleScreenChange(e) {
+				if (navLinks.classList.contains('active')) {
+					document.body.style.overflowY = 'hidden';
+					document.body.style.position = 'fixed';
+					document.body.style.width = '100%';
+				}
+				if (!e.matches) {
+					document.body.style.overflowY = '';
+					document.body.style.position = '';
+					document.body.style.width = '';
+				}
+			}
+
+			mediaQuery.addEventListener('change', handleScreenChange);
+		});
+
+	</script>
+</body>
+
+</html>

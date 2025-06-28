@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home | Flourishing Mind Counselling</title>
+	<link rel="stylesheet" href="static/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+	<main>
+		<!-- Header & Navigation -->
+		<header style="background-color: #480048;">
+			<div class="container">
+				<a href="#" class="logo">
+					<img src="static/images/Website Header.png" style="height: 176px;margin: 0 auto;margin-top: 22px;" />
+				</a>
+				<nav class="nav-container">
+
+					<button class="hamburger" id="hamburger">
+						<i class="fas fa-bars" style="color:#fffef6;"></i>
+					</button>
+					<div class="nav-links" id="nav-links">
+	<a href="/home" id="topnav-home" class="active">Home</a>
+	<a href="/therapist" id="topnav-therapist">Therapist</a>
+	<a href="/services" id="topnav-services">Services</a>
+	<a href="/resources" id="topnav-resources">Resources</a>
+	<a href="/blogs" id="topnav-blogs">Blogs</a>
+	<a href="/booking" id="topnav-booking">Booking</a>
+	<a href="/contact" id="topnav-contact">Contact</a>
+	<a href="/join-our-team" id="topnav-join-our-team">Join Our Team</a>
+</div>
+				</nav>
+			</div>
+		</header>
+		<div id="body-content" style="text-align: justify;">
+
+		
+<style>
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	.image-wrapper img {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+
+	.hotspot {
+		position: absolute;
+		cursor: pointer;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transition: background-color 0.3s ease;
+	}
+
+	.hotspot-compassion {
+		clip-path: polygon(17% 24%, 50% 5%, 50% 30%, 35% 38%);
+		-webkit-clip-path: polygon(17% 24%, 50% 5%, 50% 30%, 35% 38%);
+	}
+
+	.hotspot-client-centered {
+		clip-path: polygon(50% 30%, 50% 7%, 85% 22%, 65% 38%);
+		-webkit-clip-path: polygon(50% 30%, 50% 7%, 85% 22%, 65% 38%);
+	}
+
+	.hotspot-holistic {
+		clip-path: polygon(65% 38%, 85% 22%, 94% 60%, 69% 54%);
+		-webkit-clip-path: polygon(65% 38%, 85% 22%, 94% 60%, 69% 54%);
+	}
+
+	.hotspot-integrity {
+		clip-path: polygon(68% 54%, 92% 59%, 69% 89%, 59% 68%);
+		-webkit-clip-path: polygon(68% 54%, 92% 59%, 69% 89%, 59% 68%);
+	}
+
+	.hotspot-collabaration {
+		clip-path: polygon(59% 68%, 69% 90%, 31% 89%, 41% 68%);
+		-webkit-clip-path: polygon(59% 68%, 69% 90%, 31% 89%, 41% 68%);
+	}
+
+	.hotspot-growth {
+		clip-path: polygon(42% 67%, 31% 89%, 7% 60%, 32% 54%);
+		-webkit-clip-path: polygon(42% 67%, 31% 89%, 7% 60%, 32% 54%);
+	}
+
+	.hotspot-inclusivity {
+		clip-path: polygon(35% 38%, 32% 54%, 8% 60%, 16% 23%);
+		-webkit-clip-path: polygon(35% 38%, 32% 54%, 8% 60%, 16% 23%);
+	}
+
+	.tooltip {
+		position: absolute;
+		top: 5%;
+		left: 5%;
+		background: #222;
+		color: #fff;
+		padding: 5px 10px;
+		border-radius: 4px;
+		font-size: 14px;
+		display: none;
+	}
+
+	.darker-container {
+		background-color: rgb(230 223 229);
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.darker-container-inner-side-by-side {
+		gap: 20px;
+		display: flex;
+		max-width: 750px;
+		padding-left: 30px;
+		padding-right: 30px;
+		margin: 0 auto;
+	}
+
+	.darker-container-inner {
+		gap: 20px;
+		max-width: 750px;
+		padding-left: 30px;
+		padding-right: 30px;
+		margin: 0 auto;
+	}
+
+
+	.container2 {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+		justify-content: center;
+		font-size: 22px;
+		font-weight: bold;
+	}
+
+	.box {
+		background: white;
+		border-radius: 12px;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+		padding: 20px;
+		min-height: 250px;
+		flex: 1 1 300px;
+		/* grow, shrink, min width */
+		max-width: 400px;
+		text-align: center;
+		transition: transform 0.2s ease;
+	}
+
+	.box:hover {
+		transform: translateY(-5px);
+	}
+
+	@media (max-width: 768px) {
+		.box {
+			flex: 1 1 100%;
+		}
+	}
+
+	.coming-soon-button {
+		display: block;
+		margin: 0 auto;
+		padding: 15px 30px;
+		font-size: 1.2rem;
+		border: none;
+		border-radius: 8px;
+		background: linear-gradient(135deg, #4e8cff, #749bff);
+		color: white;
+		cursor: not-allowed;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+		transition: transform 0.2s ease;
+	}
+
+	.coming-soon-button:hover {
+		transform: scale(1.03);
+	}
+
+
+
+
+
+	form#contactUsForm {
+		max-width: 500px;
+		margin: 0 auto;
+		background: #fffef6;
+		padding: 20px;
+		border-radius: 12px;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.form-group {
+		margin-bottom: 15px;
+	}
+
+	label {
+		display: block;
+		margin-bottom: 6px;
+		font-weight: bold;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	textarea {
+		width: 100%;
+		padding: 10px;
+		border: 1px solid #ccc;
+		border-radius: 8px;
+		font-size: 16px;
+	}
+
+	textarea {
+		resize: vertical;
+		min-height: 100px;
+	}
+
+	button[type="submit"] {
+		background-color: #007bff;
+		color: white;
+		padding: 12px 20px;
+		border: none;
+		border-radius: 8px;
+		font-size: 16px;
+		cursor: pointer;
+		width: 100%;
+		transition: background-color 0.3s ease;
+	}
+
+	button[type="submit"]:hover {
+		background-color: #0056b3;
+	}
+
+	.success-message {
+		text-align: center;
+		margin-top: 15px;
+		font-weight: bold;
+		font-size: 21px;
+		color: green;
+		display: none;
+	}
+
+	@media (max-width: 600px) {
+		form#contactUsForm {
+			padding: 15px;
+		}
+
+		button[type="submit"] {
+			padding: 10px;
+			font-size: 15px;
+		}
+	}
+
+	.map-container {
+		position: relative;
+		width: 100%;
+		padding-bottom: 56.25%;
+		/* 16:9 Aspect Ratio */
+		height: 0;
+		overflow: hidden;
+		border-radius: 12px;
+	}
+
+	.map-container iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border: 0;
+	}
+
+	.spinner {
+		display: none;
+		width: 16px;
+		height: 16px;
+		border: 2px solid #fff;
+		border-top: 2px solid transparent;
+		border-radius: 50%;
+		margin-left: 10px;
+		animation: spin 0.8s linear infinite;
+		vertical-align: middle;
+	}
+
+	@keyframes spin {
+		to {
+			transform: rotate(360deg);
+		}
+	}
+
+	.loading .btn-text {
+		opacity: 0.6;
+	}
+
+	.loading .spinner {
+		display: inline-block;
+	}
+</style>
+<div class="darker-container">
+	<div class="darker-container-inner-side-by-side">
+		<div style="display: flex;align-items: center;justify-content: left;min-height: 100px;">
+			<h1>Mission Statement</h1>
+		</div>
+		<div style="text-align: right;">
+			At Flourishing Mind Counselling, we create a safe, welcoming environment where individuals can confront
+			life's challenges with support and understanding. Through compassionate, client-centered therapy, we
+			empower clients to build resilience, foster personal growth, and achieve lasting well-being. Our
+			dedicated team is committed to providing the care and insight needed for positive transformation,
+			helping each person thrive and flourish.
+		</div>
+	</div>
+</div>
+<div class="image-wrapper">
+	<img src="static/images/wheel/overview.png" alt="Interactive Image" id="wheel-image">
+	<div class="hotspot hotspot-compassion" onmouseenter="compassionEnter()" onmouseleave="leave()"></div>
+	<div class="hotspot hotspot-client-centered" onmouseenter="clientCenteredEnter()" onmouseleave="leave()"></div>
+	<div class="hotspot hotspot-holistic" onmouseenter="holisticEnter()" onmouseleave="leave()"></div>
+	<div class="hotspot hotspot-integrity" onmouseenter="integrityEnter()" onmouseleave="leave()"></div>
+	<div class="hotspot hotspot-collabaration" onmouseenter="collabarationEnter()" onmouseleave="leave()"></div>
+	<div class="hotspot hotspot-growth" onmouseenter="growthEnter()" onmouseleave="leave()"></div>
+	<div class="hotspot hotspot-inclusivity" onmouseenter="inclusivityEnter()" onmouseleave="leave()"></div>
+</div>
+<div class="darker-container">
+	<div class="darker-container-inner">
+		<h1>Our Values</h1>
+		<ol id="listItems">
+			<li>
+				<b>Compassion & Empathy - </b>You deserve to be heard and understood. We provide care with kindness,
+				deep empathy, and genuine validation, ensuring you feel truly supported.
+			</li>
+			<li>
+				<b>Client-Centered Care - </b>Your journey is unique, and so is our approach. We tailor therapy to fit
+				your needs, helping you heal, grow, and flourish at your own pace.
+			</li>
+			<li>
+				<b>Holistic Well-Being - </b>Mental health is connected to every part of life. We consider your mind,
+				body, relationships, and environment to support your overall well-being.
+			</li>
+			<li>
+				<b>Integrity & Trust - </b>A safe space starts with honesty, respect, and confidentiality. You can trust
+				that we will always uphold the highest ethical standards in our care.
+			</li>
+			<li>
+				<b>Collaboration & Support - </b>Healing is a journey, and you don't have to walk it alone. We're here
+				to support you every step of the way, working alongside you—and, when helpful, your loved ones or other
+				professionals—to ensure you receive the care and guidance that best meets your needs.
+			</li>
+			<li>
+				<b>Growth & Resilience - </b>Life's challenges can feel overwhelming, but they don't define you. With
+				the right support, you can build strength, find balance, and embrace positive change.
+			</li>
+			<li>
+				<b>Inclusivity & Diversity - </b>Everyone deserves to feel welcome and valued. We honor all backgrounds,
+				identities, and experiences, creating a space where you feel safe and seen.
+			</li>
+		</ol>
+	</div>
+</div>
+<br />
+<h1 style="text-align: center;">Services</h1>
+<div class="container2">
+	<div class="box">
+		<img src="static/images/11062b_6d8d840594294477b43e0826bd515e19~mv2.avif">
+		<br />
+		Free Consultations
+	</div>
+	<div class="box">
+		<img src="static/images/11062b_6d8dec7fd78d448cbe05706f0612be12~mv2.avif">
+		<br />
+		Individual Psychotherapy
+	</div>
+	<div class="box" style="display: flex;justify-content: center;align-items: center;">
+		More Services Coming Soon
+	</div>
+</div>
+<br />
+<button class="coming-soon-button" disabled>
+	Booking Coming Soon
+</button>
+<br />
+<div class="darker-container">
+	<div class="darker-container-inner">
+		<h1 style="text-align: center;">Contact Us</h1>
+		<form enctype="text/plain" id="contactUsForm">
+			<div class="form-group">
+				<label for="name">Full Name</label>
+				<input type="text" id="name" name="name" />
+			</div>
+			<div class="form-group">
+				<label for="email">Email Address</label>
+				<input type="email" id="email" name="email" />
+			</div>
+			<div class="form-group">
+				<label for="subject">Subject</label>
+				<input type="text" id="subject" name="subject" />
+			</div>
+			<div class="form-group">
+				<label for="message">Message</label>
+				<textarea id="message" name="message"></textarea>
+			</div>
+			<div class="form-group">
+				<div class="form-group">
+					<button type="submit" id="submitBtn">
+						<span class="btn-text">Send Message</span>
+						<span class="spinner" id="spinner"></span>
+					</button>
+				</div>
+			</div>
+			<div class="success-message" id="successMsg">Thank you! Your message has been sent.</div>
+		</form>
+		<br />
+		<h1 style="text-align: center;">Contact Information</h1>
+		<div class="container2">
+			<div class="box" style="max-width: 300px;">
+				Offering Virtual Psychotherapy to Clients Across Ontario
+				<br />
+				<br />
+				<div style="font-size: 11px;text-align: left;">
+					<i class="fas fa-phone-alt flip-horizontal"></i> Call us: (613) 227-7212
+					<br />
+					<i class="fas fa-envelope"></i> Email: <a
+						href="mailto:admin@flourishingmindcounselling.ca">admin@flourishingmindcounselling.ca</a>
+					<br />
+					<i class="fas fa-calendar-alt"></i> Schedule a consultation:
+					<button class="coming-soon-button" disabled>
+						Booking Coming Soon
+					</button>
+				</div>
+			</div>
+			<div class="box" style="max-width: 300px;display: flex; align-items: center;">
+				<img src="static/images/9d968d_6033b9caa69e4d4dbb3690597fa0b757~mv2.avif" style="width: 100%;" />
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	var mainImage = document.getElementById('wheel-image');
+
+	function compassionEnter() {
+		mainImage.src = 'static/images/wheel/compassion_empathy.png';
+	}
+	function clientCenteredEnter() {
+		mainImage.src = 'static/images/wheel/client_centered_care.png';
+	}
+	function holisticEnter() {
+		mainImage.src = 'static/images/wheel/holistic_well_being.png';
+	}
+	function integrityEnter() {
+		mainImage.src = 'static/images/wheel/integrity_trust.png';
+	}
+	function collabarationEnter() {
+		mainImage.src = 'static/images/wheel/collaboration_support.png';
+	}
+	function growthEnter() {
+		mainImage.src = 'static/images/wheel/growth_resilience.png';
+	}
+	function inclusivityEnter() {
+		mainImage.src = 'static/images/wheel/inclusivity_diversity.png';
+	}
+	function leave() {
+		mainImage.src = 'static/images/wheel/overview.png';
+	}
+
+	const img1 = new Image();
+	img1.src = "static/images/wheel/compassion_empathy.png";
+	const img2 = new Image();
+	img2.src = "static/images/wheel/client_centered_care.png";
+	const img3 = new Image();
+	img3.src = "static/images/wheel/holistic_well_being.png";
+	const img4 = new Image();
+	img4.src = "static/images/wheel/integrity_trust.png";
+	const img5 = new Image();
+	img5.src = "static/images/wheel/collaboration_support.png";
+	const img6 = new Image();
+	img6.src = "static/images/wheel/growth_resilience.png";
+	const img7 = new Image();
+	img7.src = "static/images/wheel/inclusivity_diversity.png";
+</script>
+
+
+
+
+	</main>
+
+	<footer>
+		<div style="text-align: center;">
+			<img id="footerLogo" src="static/images/Main Site - Website Footer.png" style="height: 175px;    margin-top: 60px;"/>
+		</div>
+	</footer>
+	<br />
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			// Mobile Menu Toggle
+			const hamburger = document.getElementById('hamburger');
+			const navLinks = document.getElementById('nav-links');
+
+			hamburger.addEventListener('click', function () {
+				navLinks.classList.toggle('active');
+				if (navLinks.classList.contains('active')) {
+					hamburger.innerHTML = '<i class="fas fa-times" style="color: #fffef6;"></i>'
+					document.body.style.overflowY = 'scroll';
+					document.body.style.position = 'fixed';
+					document.body.style.width = '100%';
+				} else {
+					hamburger.innerHTML = '<i class="fas fa-bars" style="color: white;"></i>'
+					document.body.style.overflowY = '';
+					document.body.style.position = '';
+					document.body.style.width = '';
+
+				}
+			});
+
+			// Close menu when clicking on a link
+			document.querySelectorAll('.nav-links a').forEach(link => {
+				link.addEventListener('click', () => {
+					navLinks.classList.remove('active');
+					hamburger.innerHTML = '<i class="fas fa-bars" style="color: white;"></i>';
+				});
+			});
+
+			// Sticky header on scroll
+			window.addEventListener('scroll', function () {
+				const header = document.querySelector('header');
+				header.classList.toggle('sticky', window.scrollY > 0);
+			});
+
+			// Scroll animations
+			const fadeElements = document.querySelectorAll('.fade-in');
+
+			const fadeInOnScroll = function () {
+				fadeElements.forEach(element => {
+					const elementTop = element.getBoundingClientRect().top;
+					const windowHeight = window.innerHeight;
+
+					if (elementTop < windowHeight - 100) {
+						element.style.opacity = '1';
+						element.style.transform = 'translateY(0)';
+					}
+				});
+			};
+
+			// Initialize elements as invisible
+			fadeElements.forEach(element => {
+				element.style.opacity = '0';
+				element.style.transform = 'translateY(20px)';
+				element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+			});
+
+			// Check on load and scroll
+			window.addEventListener('load', fadeInOnScroll);
+			window.addEventListener('scroll', fadeInOnScroll);
+
+			const mediaQuery = window.matchMedia("(max-width: 768px)");
+
+			function handleScreenChange(e) {
+				if (navLinks.classList.contains('active')) {
+					document.body.style.overflowY = 'hidden';
+					document.body.style.position = 'fixed';
+					document.body.style.width = '100%';
+				}
+				if (!e.matches) {
+					document.body.style.overflowY = '';
+					document.body.style.position = '';
+					document.body.style.width = '';
+				}
+			}
+
+			mediaQuery.addEventListener('change', handleScreenChange);
+		});
+
+	</script>
+</body>
+
+</html>
