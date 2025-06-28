@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ pageObj.name }} | Flourishing Mind Counselling</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+	<main>
+		<!-- Header & Navigation -->
+		<header style="background-color: #480048;">
+			<div class="container">
+				<a href="#" class="logo">
+					<img src="/static/images/Website Header.png" style="height: 176px;margin: 0 auto;margin-top: 22px;" />
+				</a>
+				<nav class="nav-container">
+
+					<button class="hamburger" id="hamburger">
+						<i class="fas fa-bars" style="color:#fffef6;"></i>
+					</button>
+					{{ pageObj.nav | safe }}
+				</nav>
+			</div>
+		</header>
+		<div id="body-content" style="text-align: justify;">
+
+		{% block content %}{% endblock %}
+	</main>
+
+	<footer>
+		<div style="text-align: center;">
+			<img id="footerLogo" src="/static/images/Main Site - Website Footer.png" style="height: 175px;    margin-top: 60px;"/>
+		</div>
+	</footer>
+	<br />
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			// Mobile Menu Toggle
+			const hamburger = document.getElementById('hamburger');
+			const navLinks = document.getElementById('nav-links');
+
+			hamburger.addEventListener('click', function () {
+				navLinks.classList.toggle('active');
+				if (navLinks.classList.contains('active')) {
+					hamburger.innerHTML = '<i class="fas fa-times" style="color: #fffef6;"></i>'
+					document.body.style.overflowY = 'scroll';
+					document.body.style.position = 'fixed';
+					document.body.style.width = '100%';
+				} else {
+					hamburger.innerHTML = '<i class="fas fa-bars" style="color: white;"></i>'
+					document.body.style.overflowY = '';
+					document.body.style.position = '';
+					document.body.style.width = '';
+
+				}
+			});
+
+			// Close menu when clicking on a link
+			document.querySelectorAll('.nav-links a').forEach(link => {
+				link.addEventListener('click', () => {
+					navLinks.classList.remove('active');
+					hamburger.innerHTML = '<i class="fas fa-bars" style="color: white;"></i>';
+				});
+			});
+
+			// Sticky header on scroll
+			window.addEventListener('scroll', function () {
+				const header = document.querySelector('header');
+				header.classList.toggle('sticky', window.scrollY > 0);
+			});
+
+			// Scroll animations
+			const fadeElements = document.querySelectorAll('.fade-in');
+
+			const fadeInOnScroll = function () {
+				fadeElements.forEach(element => {
+					const elementTop = element.getBoundingClientRect().top;
+					const windowHeight = window.innerHeight;
+
+					if (elementTop < windowHeight - 100) {
+						element.style.opacity = '1';
+						element.style.transform = 'translateY(0)';
+					}
+				});
+			};
+
+			// Initialize elements as invisible
+			fadeElements.forEach(element => {
+				element.style.opacity = '0';
+				element.style.transform = 'translateY(20px)';
+				element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+			});
+
+			// Check on load and scroll
+			window.addEventListener('load', fadeInOnScroll);
+			window.addEventListener('scroll', fadeInOnScroll);
+
+			const mediaQuery = window.matchMedia("(max-width: 768px)");
+
+			function handleScreenChange(e) {
+				if (navLinks.classList.contains('active')) {
+					document.body.style.overflowY = 'hidden';
+					document.body.style.position = 'fixed';
+					document.body.style.width = '100%';
+				}
+				if (!e.matches) {
+					document.body.style.overflowY = '';
+					document.body.style.position = '';
+					document.body.style.width = '';
+				}
+			}
+
+			mediaQuery.addEventListener('change', handleScreenChange);
+		});
+
+	</script>
+</body>
+
+</html>
