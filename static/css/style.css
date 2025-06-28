@@ -157,8 +157,16 @@ footer {
 	height: 175px;
 }
 
+#logo-top {
+	margin-bottom: 19px !important;
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
+	#logo-top {
+		margin-bottom: 0px !important;
+	}
+
 	.hamburger {
 		display: block;
 		margin-left: auto;
