@@ -34,7 +34,7 @@
 				</nav>
 			</div>
 		</header>
-		<div id="body-content" style="text-align: justify;">
+		<div id="body-content">
 
 		
 <style>
@@ -142,9 +142,9 @@
 	}
 
 	.box {
-		background: white;
+		background: rgb(230 223 229);
 		border-radius: 12px;
-		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+		margin: 15px;
 		padding: 20px;
 		min-height: 250px;
 		flex: 1 1 300px;
@@ -164,27 +164,23 @@
 		}
 	}
 
-	.coming-soon-button {
+	.nice-button {
 		display: block;
 		margin: 0 auto;
 		padding: 15px 30px;
 		font-size: 1.2rem;
 		border: none;
 		border-radius: 8px;
-		background: linear-gradient(135deg, #4e8cff, #749bff);
+		background: linear-gradient(135deg, #9bf6e1, #dee5e6);
 		color: white;
-		cursor: not-allowed;
+		
 		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 		transition: transform 0.2s ease;
 	}
 
-	.coming-soon-button:hover {
+	.nice-button:hover {
 		transform: scale(1.03);
 	}
-
-
-
-
 
 	form#contactUsForm {
 		max-width: 500px;
@@ -213,27 +209,12 @@
 		border: 1px solid #ccc;
 		border-radius: 8px;
 		font-size: 16px;
+		background-color: #dee5e6;
 	}
 
 	textarea {
 		resize: vertical;
 		min-height: 100px;
-	}
-
-	button[type="submit"] {
-		background-color: #007bff;
-		color: white;
-		padding: 12px 20px;
-		border: none;
-		border-radius: 8px;
-		font-size: 16px;
-		cursor: pointer;
-		width: 100%;
-		transition: background-color 0.3s ease;
-	}
-
-	button[type="submit"]:hover {
-		background-color: #0056b3;
 	}
 
 	.success-message {
@@ -364,22 +345,22 @@
 <br />
 <h1 style="text-align: center;">Services</h1>
 <div class="container2">
-	<div class="box">
+	<div class="box" style="box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
 		<img src="static/images/11062b_6d8d840594294477b43e0826bd515e19~mv2.avif">
 		<br />
 		Free Consultations
 	</div>
-	<div class="box">
+	<div class="box" style="box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
 		<img src="static/images/11062b_6d8dec7fd78d448cbe05706f0612be12~mv2.avif">
 		<br />
 		Individual Psychotherapy
 	</div>
-	<div class="box" style="display: flex;justify-content: center;align-items: center;">
+	<div class="box" style="display: flex;justify-content: center;align-items: center;box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
 		More Services Coming Soon
 	</div>
 </div>
 <br />
-<button class="coming-soon-button" disabled>
+<button class="nice-button" style="cursor: not-allowed;" disabled>
 	Booking Coming Soon
 </button>
 <br />
@@ -405,7 +386,7 @@
 			</div>
 			<div class="form-group">
 				<div class="form-group">
-					<button type="submit" id="submitBtn">
+					<button type="submit" id="submitBtn" class="nice-button">
 						<span class="btn-text">Send Message</span>
 						<span class="spinner" id="spinner"></span>
 					</button>
@@ -427,12 +408,12 @@
 						href="mailto:admin@flourishingmindcounselling.ca">admin@flourishingmindcounselling.ca</a>
 					<br />
 					<i class="fas fa-calendar-alt"></i> Schedule a consultation:
-					<button class="coming-soon-button" disabled>
+					<button class="nice-button" disabled>
 						Booking Coming Soon
 					</button>
 				</div>
 			</div>
-			<div class="box" style="max-width: 300px;display: flex; align-items: center;">
+			<div class="box" style="max-width: 500px;display: flex; align-items: center;">
 				<img src="static/images/9d968d_6033b9caa69e4d4dbb3690597fa0b757~mv2.avif" style="width: 100%;" />
 			</div>
 		</div>
