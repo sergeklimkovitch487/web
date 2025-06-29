@@ -284,6 +284,11 @@ a.customLink:visited {
 }
 
 .no-click-visuals {
+	transition: none !important;
+  box-shadow: none !important;
+  background: none !important;
+
+
   outline: none;
   user-select: none;
   -webkit-tap-highlight-color: transparent; /* removes mobile tap highlight */
