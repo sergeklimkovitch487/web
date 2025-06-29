@@ -153,11 +153,7 @@ footer {
 	background-color: #fffef6;
 }
 
-.header-element {
-	height: 175px;
-}
-
-#footerLogo {
+.header-footer {
 	height: 175px;
 }
 
@@ -169,12 +165,8 @@ footer {
 		height: 60px;
 	}
 
-	#footerLogo {
+	.header-footer {
 		height: 85px;
-	}
-
-	.header-element {
-		height: 100px;
 	}
 
 	.nav-links {
@@ -289,16 +281,4 @@ a.customLink:link {
 
 a.customLink:visited {
   color: #88408c;
-}
-
-.no-click-visuals {
-  outline: none;
-  user-select: none;
-  -webkit-tap-highlight-color: transparent; /* removes mobile tap highlight */
-}
-
-.no-click-visuals:focus,
-.no-click-visuals:active {
-  outline: none;
-  background: none;
 }
