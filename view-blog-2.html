@@ -17,8 +17,8 @@
 	<main>
 		<!-- Header & Navigation -->
 		<header style="background-color: #480048;">
-			<div class="container">
-				<a href="home" class="logo">
+			<div class="header-2-container">
+				<a href="home.html" class="logo">
 					<img id="logo-top" class="header-footer" src="static/images/Website Header.png" style="margin: 0 auto;margin-top: 22px;" />
 				</a>
 				<nav class="nav-container">
@@ -42,7 +42,163 @@
 		<div id="body-content">
 
 		
-    blog 2
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+      align-items: center;
+    }
+    .header .info {
+      flex: 1;
+      min-width: 250px;
+    }
+    .header .visual img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: 2em;
+    }
+    .meta {
+      font-size: 0.95em;
+      color: #666;
+    }
+
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 40px 0;
+    }
+    .text, .visual {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+    }
+    .visual img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    .share {
+      text-align: right;
+      margin-top: 40px;
+    }
+    .share button i {
+      margin-right: 6px;
+    }
+    .share button:hover {
+      background-color: #005a44;
+    }
+
+    @media (max-width: 768px) {
+      .section, .header {
+        flex-direction: column;
+      }
+      .share {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="info">
+        <h1>The Hidden Grief of Life Transitions: Even “Good” Changes Are Hard</h1>
+        <p class="meta">By <strong>Your Name</strong> • June 30, 2025</p>
+      </div>
+      <div class="visual">
+        <img src="static/images/blogs/5.png" alt="Hidden grief visual">
+      </div>
+    </div>
+
+    <p>Not all grief comes from loss through death. Some of the most painful emotional experiences come from the quieter, less visible losses — the ones we aren't always taught to name.</p>
+    <p>These are called non-death losses, and they often show up during life transitions that, from the outside, may even look “positive.”</p>
+
+    <!-- Section: Examples of Hidden Grief (Image Left, Text Right) -->
+    <div class="section">
+      <div class="visual">
+        <img src="static/images/blogs/6.png" alt="Life transitions grief">
+      </div>
+      <div class="text">
+        <h2>Examples of Hidden Grief:</h2>
+        <ul>
+          <li>Leaving a job, school, or city you loved</li>
+          <li>Becoming a parent and grieving your former freedom or identity</li>
+          <li>Changing careers or retiring</li>
+          <li>Moving in with a partner and adjusting to a new routine</li>
+          <li>Recovering from illness or injury and feeling disconnected from your old self</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Section: Why It Feels Emotional (Image Left, Text Right) -->
+    <div class="section">
+      <div class="visual">
+        <img src="static/images/blogs/7.png" alt="Why changes feel emotional">
+      </div>
+      <div class="text">
+        <h2>Why These Transitions Feel So Emotional:</h2>
+        <p>Even when we choose change, we are still letting go of something else.</p>
+        <p>We might grieve old versions of ourselves, lost dreams, or relationships that feel different. These changes are valid and deserving of care.</p>
+      </div>
+    </div>
+
+    <!-- Section: What You Can Do (Text Left, Image Right) -->
+    <div class="section">
+      <div class="text">
+        <h2>What You Can Do:</h2>
+        <ul>
+          <li><strong>Name the loss.</strong> Giving language to your grief makes it real — and more manageable.</li>
+          <li><strong>Feel without minimizing.</strong> You don't have to justify your emotions by comparing them to someone else's.</li>
+          <li><strong>Talk about it.</strong> Therapy is a safe space to process non-death losses and find meaning in your transition.</li>
+        </ul>
+        <p><em>Grief isn't just about endings — it's about the space between what was and what's next.</em><br>
+        And you don't have to navigate that space alone.<br>
+        We're here to support you through every season — especially the ones that feel heavy, quiet, or complicated.</p>
+      </div>
+      <div class="visual">
+        <img src="static/images/blogs/8.png" alt="Support during life transitions">
+      </div>
+    </div>
+
+    <!-- Share Button -->
+    <div class="share">
+      <button class="nice-button" onclick="shareBlog()"><i class="fas fa-share-alt"></i> Share This Post</button>
+    </div>
+  </div>
+
+  <script>
+    function shareBlog() {
+      const url = window.location.href;
+      navigator.clipboard.writeText(url)
+        .then(() => alert("Link copied to clipboard!"))
+        .catch(() => alert("Unable to copy link."));
+    }
+  </script>
 
 	</main>
 

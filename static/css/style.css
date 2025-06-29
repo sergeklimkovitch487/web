@@ -43,7 +43,7 @@ header {
 	transition: var(--transition);
 }
 
-.container {
+.header-2-container {
 	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
@@ -207,7 +207,7 @@ footer {
 		position: absolute;
 	}
 
-	.container {
+	.header-2-container {
 		padding-bottom: 25px;
 	}
 }

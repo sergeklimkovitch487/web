@@ -17,8 +17,8 @@
 	<main>
 		<!-- Header & Navigation -->
 		<header style="background-color: #480048;">
-			<div class="container">
-				<a href="home" class="logo">
+			<div class="header-2-container">
+				<a href="home.html" class="logo">
 					<img id="logo-top" class="header-footer" src="static/images/Website Header.png" style="margin: 0 auto;margin-top: 22px;" />
 				</a>
 				<nav class="nav-container">
@@ -42,7 +42,163 @@
 		<div id="body-content">
 
 		
-    blog 1
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+      align-items: center;
+    }
+    .header .info {
+      flex: 1;
+      min-width: 250px;
+    }
+    .header .visual img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: 2em;
+    }
+    .meta {
+      font-size: 0.95em;
+      color: #666;
+    }
+
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 40px 0;
+    }
+    .text, .visual {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+    }
+    .visual img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    .share {
+      text-align: right;
+      margin-top: 40px;
+    }
+    .share button i {
+      margin-right: 6px;
+    }
+    .share button:hover {
+      background-color: #005a44;
+    }
+
+    @media (max-width: 768px) {
+      .section, .header {
+        flex-direction: column;
+      }
+      .share {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="info">
+        <h1>When the Lines Blur: Reclaiming Your Work-Life Balance</h1>
+        <p class="meta">By <strong>Your Name</strong> • July 2, 2025</p>
+      </div>
+      <div class="visual">
+        <img src="static/images/blogs/2.png" alt="Work-life balance visual">
+      </div>
+    </div>
+
+    <p>Finding a healthy work-life balance is one of the most important ways we protect our mental and emotional health.</p>
+    <p>And yet, many of us feel like we're failing at it. Whether you're juggling a demanding job, caregiving responsibilities, or emotional exhaustion from "doing it all," the pressure can be relentless.</p>
+
+    <!-- Section: Signs (Text Right, Image Left) -->
+    <div class="section">
+      <div class="visual">
+        <img src="static/images/blogs/3.png" alt="Signs of burnout">
+      </div>
+      <div class="text">
+        <h2>Signs You Might Be Out of Balance:</h2>
+        <ul>
+          <li>You feel like you're “always on”</li>
+          <li>You struggle to fully rest, even during downtime</li>
+          <li>You're often irritable, overwhelmed, or burnt out</li>
+          <li>You find it hard to be present in your relationships</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Section: Shifts (Text Left, Image Right) -->
+    <div class="section">
+      <div class="text">
+        <h2>Small Shifts That Can Make a Big Difference:</h2>
+        <ul>
+          <li><strong>Set softer boundaries.</strong> You don't need to overhaul your schedule — even a few minutes of undivided rest can matter.</li>
+          <li><strong>Redefine productivity.</strong> Rest, joy, and connection are just as important as tasks completed.</li>
+          <li><strong>Practice mental “sign-offs.”</strong> Create routines that help you leave work behind at the end of the day — even if work is at home.</li>
+          <li><strong>Name your needs.</strong> Saying “I'm at full capacity” or “I need time to reset” is not selfish. It's wise.</li>
+        </ul>
+      </div>
+      <div class="visual">
+        <img src="static/images/blogs/4.png" alt="Self-care activities">
+      </div>
+    </div>
+
+    <!-- Caregivers Section -->
+    <div class="section">
+      <div class="visual">
+        <img src="caregiver-support.jpg" alt="Caregiver visual">
+      </div>
+      <div class="text">
+        <h2>A Note for Caregivers & Overfunctioners:</h2>
+        <p>If you're used to being the one others rely on, work-life balance might feel like a luxury. But burnout is real — and recovery starts with allowing yourself to pause.</p>
+        <p>Work-life balance isn't about perfection. It's about returning to yourself. One small choice at a time.</p>
+        <p>Want more practical tips? <a href="work-life-resources.html">Explore our Work-Life Balance Resource Page</a> for more tools you can start using today.</p>
+      </div>
+    </div>
+
+    <!-- Share Button -->
+    <div class="share">
+      <button class="nice-button" onclick="shareBlog()"><i class="fas fa-share-alt"></i> Share This Post</button>
+    </div>
+  </div>
+
+  <script>
+    function shareBlog() {
+      const url = window.location.href;
+      navigator.clipboard.writeText(url)
+        .then(() => alert("Link copied to clipboard!"))
+        .catch(() => alert("Unable to copy link."));
+    }
+  </script>
+
 
 	</main>
 
