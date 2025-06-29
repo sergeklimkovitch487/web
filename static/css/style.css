@@ -153,28 +153,28 @@ footer {
 	background-color: #fffef6;
 }
 
-.header-footer {
+.header-element {
 	height: 175px;
 }
 
-#logo-top {
-	margin-bottom: 19px !important;
+#footerLogo {
+	height: 175px;
 }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-	#logo-top {
-		margin-bottom: 0px !important;
-	}
-
 	.hamburger {
 		display: block;
 		margin-left: auto;
 		height: 60px;
 	}
 
-	.header-footer {
+	#footerLogo {
 		height: 85px;
+	}
+
+	.header-element {
+		height: 100px;
 	}
 
 	.nav-links {
@@ -289,4 +289,16 @@ a.customLink:link {
 
 a.customLink:visited {
   color: #88408c;
+}
+
+.no-click-visuals {
+  outline: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent; /* removes mobile tap highlight */
+}
+
+.no-click-visuals:focus,
+.no-click-visuals:active {
+  outline: none;
+  background: none;
 }
