@@ -282,3 +282,15 @@ a.customLink:link {
 a.customLink:visited {
   color: #88408c;
 }
+
+.no-click-visuals {
+  outline: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent; /* removes mobile tap highlight */
+}
+
+.no-click-visuals:focus,
+.no-click-visuals:active {
+  outline: none;
+  background: none;
+}
