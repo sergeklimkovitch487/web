@@ -299,3 +299,9 @@ a.customLink:visited {
   outline: none;
   background: none;
 }
+
+#footerLogo {
+	width:100%;
+	max-width: 500px;
+	padding: 15px;
+}
