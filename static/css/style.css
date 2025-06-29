@@ -299,3 +299,12 @@ a.customLink:visited {
   outline: none;
   background: none;
 }
+
+#message {
+	margin-top: 1em;
+	height: 25px;
+	color: green;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 13px;
+}

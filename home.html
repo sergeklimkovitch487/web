@@ -294,23 +294,29 @@
 		</div>
 		<div style="color: #4d404a;">
 			<i>
-			At Flourishing Mind Counselling, we create a safe, welcoming environment where individuals can confront
-			life's challenges with support and understanding. Through compassionate, client-centered therapy, we
-			empower clients to build resilience, foster personal growth, and achieve lasting well-being. Our
-			dedicated team is committed to providing the care and insight needed for positive transformation,
-			helping each person thrive and flourish.</i>
+				At Flourishing Mind Counselling, we create a safe, welcoming environment where individuals can confront
+				life's challenges with support and understanding. Through compassionate, client-centered therapy, we
+				empower clients to build resilience, foster personal growth, and achieve lasting well-being. Our
+				dedicated team is committed to providing the care and insight needed for positive transformation,
+				helping each person thrive and flourish.</i>
 		</div>
 	</div>
 </div>
 <div class="image-wrapper">
 	<img src="static/images/wheel/overview.png" alt="Interactive Image" id="wheel-image">
-	<span class="no-click-visuals hotspot hotspot-compassion" onmouseenter="compassionEnter()" onmouseleave="leave()"></span>
-	<span class="no-click-visuals hotspot hotspot-client-centered" onmouseenter="clientCenteredEnter()" onmouseleave="leave()"></span>
-	<span class="no-click-visuals hotspot hotspot-holistic" onmouseenter="holisticEnter()" onmouseleave="leave()"></span>
-	<span class="no-click-visuals hotspot hotspot-integrity" onmouseenter="integrityEnter()" onmouseleave="leave()"></span>
-	<span class="no-click-visuals hotspot hotspot-collabaration" onmouseenter="collabarationEnter()" onmouseleave="leave()"></span>
+	<span class="no-click-visuals hotspot hotspot-compassion" onmouseenter="compassionEnter()"
+		onmouseleave="leave()"></span>
+	<span class="no-click-visuals hotspot hotspot-client-centered" onmouseenter="clientCenteredEnter()"
+		onmouseleave="leave()"></span>
+	<span class="no-click-visuals hotspot hotspot-holistic" onmouseenter="holisticEnter()"
+		onmouseleave="leave()"></span>
+	<span class="no-click-visuals hotspot hotspot-integrity" onmouseenter="integrityEnter()"
+		onmouseleave="leave()"></span>
+	<span class="no-click-visuals hotspot hotspot-collabaration" onmouseenter="collabarationEnter()"
+		onmouseleave="leave()"></span>
 	<span class="no-click-visuals hotspot hotspot-growth" onmouseenter="growthEnter()" onmouseleave="leave()"></span>
-	<span class="no-click-visuals hotspot hotspot-inclusivity" onmouseenter="inclusivityEnter()" onmouseleave="leave()"></span>
+	<span class="no-click-visuals hotspot hotspot-inclusivity" onmouseenter="inclusivityEnter()"
+		onmouseleave="leave()"></span>
 </div>
 <div class="darker-container">
 	<div class="darker-container-inner">
@@ -329,20 +335,24 @@
 				body, relationships, and environment to support your overall well-being.
 			</li>
 			<li>
-				<b>Integrity &amp; Trust - </b>A safe space starts with honesty, respect, and confidentiality. You can trust
+				<b>Integrity &amp; Trust - </b>A safe space starts with honesty, respect, and confidentiality. You can
+				trust
 				that we will always uphold the highest ethical standards in our care.
 			</li>
 			<li>
-				<b>Collaboration &amp; Support - </b>Healing is a journey, and you don't have to walk it alone. We're here
+				<b>Collaboration &amp; Support - </b>Healing is a journey, and you don't have to walk it alone. We're
+				here
 				to support you every step of the way, working alongside you—and, when helpful, your loved ones or other
 				professionals—to ensure you receive the care and guidance that best meets your needs.
 			</li>
 			<li>
-				<b>Growth &amp; Resilience - </b>Life's challenges can feel overwhelming, but they don't define you. With
+				<b>Growth &amp; Resilience - </b>Life's challenges can feel overwhelming, but they don't define you.
+				With
 				the right support, you can build strength, find balance, and embrace positive change.
 			</li>
 			<li>
-				<b>Inclusivity &amp; Diversity - </b>Everyone deserves to feel welcome and valued. We honor all backgrounds,
+				<b>Inclusivity &amp; Diversity - </b>Everyone deserves to feel welcome and valued. We honor all
+				backgrounds,
 				identities, and experiences, creating a space where you feel safe and seen.
 			</li>
 		</ul>
@@ -361,7 +371,8 @@
 		<br />
 		Individual Psychotherapy
 	</div>
-	<div class="box" style="display: flex;justify-content: center;align-items: center;box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+	<div class="box"
+		style="display: flex;justify-content: center;align-items: center;box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
 		More Services Coming Soon
 	</div>
 </div>
@@ -373,33 +384,88 @@
 <div class="darker-container">
 	<div class="darker-container-inner">
 		<h1 style="text-align: center;color:#480048;">Contact Us</h1>
-		<form id="contactUsForm" method="POST" action="https://formsubmit.co/sergeklimkovitch@gmail.com">
+		<form id="contactUsForm">
+			<input type="hidden" name="_captcha" value="false">
 			<div class="form-group">
-				<label for="name" style="color: #4d404a">Full Name</label>
-				<input type="text" id="name" name="name" />
+				<label for="name" style="color: #4d404a">Your Name</label>
+				<input type="text" name="name" required />
 			</div>
 			<div class="form-group">
 				<label for="email" style="color: #4d404a">Email Address</label>
-				<input type="email" id="email" name="email" />
-			</div>
-			<div class="form-group">
-				<label for="subject" style="color: #4d404a">Subject</label>
-				<input type="text" id="subject" name="subject" />
+				<input type="email" name="email" required />
 			</div>
 			<div class="form-group">
 				<label for="message" style="color: #4d404a">Message</label>
-				<textarea id="message" name="message"></textarea>
+				<textarea name="message" rows="5" required></textarea>
 			</div>
-			<div class="form-group">
-				<div class="form-group">
-					<button type="submit" id="submitBtn" class="nice-button" style="cursor: pointer;">
-						<span class="btn-text">Send Message</span>
-						<span class="spinner" id="spinner"></span>
-					</button>
-				</div>
-			</div>
-			<div class="success-message" id="successMsg">Thank you! Your message has been sent.</div>
+			<input type="text" name="_honey" style="display:none">
+			<input type="hidden" name="_redirect" value="none">
+			<button type="submit" id="submitBtn" class="nice-button"
+				style="height: 59px;width: 215px;display: flex;justify-content: center;align-items: center;">
+				<div id="sendMessageMsg">Send Message</div>
+				<div class="spinner" id="spinner"></div>
+			</button>
+			<div id="message"> </div>
 		</form>
+
+		<script>
+			const form = document.getElementById('contactUsForm');
+			const messageDiv = document.getElementById('message');
+			const sendMessageMsg = document.getElementById('sendMessageMsg');
+			const spinner = document.getElementById('spinner');
+
+			form.addEventListener('submit', function (e) {
+				e.preventDefault();
+				spinner.style.display = 'block';
+				sendMessageMsg.style.display = 'none';
+
+				const formData = new FormData(form);
+
+				fetch("https://formsubmit.co/jess.serge.k@gmail.com", {
+					method: "POST",
+					body: formData,
+					headers: {
+						'Accept': 'application/json'
+					}
+				})
+					.then(response => {
+						if (response.ok) {
+							messageDiv.innerHTML = `
+							<div class="checkmark">
+								<i class="fas fa-check-circle"></i>
+								<span>Message sent successfully!</span>
+							</div>`;
+							messageDiv.style.color = "green";
+							form.reset();
+						} else {
+							messageDiv.innerHTML = `
+							<div class="error-message">
+								<i class="fas fa-times-circle"></i>
+								<span>Something went wrong. Please try again.</span>
+							</div>`;
+							messageDiv.style.color = "red";
+						}
+					})
+					.catch(error => {
+						console.error("Error:", error);
+						messageDiv.innerHTML = `
+						<div class="error-message">
+							<i class="fas fa-times-circle"></i>
+							<span>Error sending message.</span>
+						</div>`;
+						messageDiv.style.color = "red";
+					})
+					.finally(() => {
+						// Hide spinner and enable button
+						spinner.style.display = 'none';
+						submitBtn.disabled = false;
+						sendMessageMsg.style.display = 'block';
+					});
+			});
+		</script>
+
+
+
 		<br />
 		<h1 style="text-align: center;color: #4d404a; font-size: 23px;">Contact Information</h1>
 		<div class="container2">
@@ -408,7 +474,8 @@
 				<br />
 				<br />
 				<div style="font-size: 14px;text-align: left;">
-					<i class="fas fa-phone-alt flip-horizontal"></i> <a class="customLink" href="tel:6132277212">(613) 227-7212</a>
+					<i class="fas fa-phone-alt flip-horizontal"></i> <a class="customLink" href="tel:6132277212">(613)
+						227-7212</a>
 					<br />
 					<i class="fas fa-envelope"></i> <a class="customLink"
 						href="mailto:admin@flourishingmindcounselling.ca">admin@flourishingmindcounselling.ca</a>
