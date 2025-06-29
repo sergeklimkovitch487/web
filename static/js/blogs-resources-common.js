@@ -11,7 +11,7 @@ function createBlogCardElement(blog) {
 	const card = document.createElement('div');
 	card.className = 'blog-card';
 	card.innerHTML = `
-		<a href="${blog.url}" class="blog-link">
+		<a href="${blog.url}" class="blog-link" target="_blank">
 			<img src="${blog.image}" alt="${blog.title}" class="blog-image">
 			<div class="blog-content">
 				<h3 class="blog-title">${blog.title}</h3>
