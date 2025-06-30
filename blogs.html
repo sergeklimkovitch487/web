@@ -47,9 +47,22 @@
 <script>
 	var RUN_ON_SERVER = false;
 	const dataInput = [
-		{ id: 1, title: "Your First Therapy Session: What to Expect and How to Prepare", image: "static/images/blogs/0.png", "url": "view-blog-0.html" },
-		{ id: 2, title: "When the Lines Blur: Reclaiming Your Work-Life Balance", image: "static/images/blogs/2.png", "url": "view-blog-1.html" },
-		{ id: 3, title: "The Hidden Grief of Life Transitions: Even “Good” Changes Are Hard", image: "static/images/blogs/5.png", "url": "view-blog-2.html" }
+		{ 
+			id: 0, 
+			title: "Your First Therapy Session: What to Expect and How to Prepare", 
+			image: "static/images/blogs/0.png",
+			url: "view-blog-0.html"
+		},
+		{
+			id: 1,
+			title: "When the Lines Blur: Reclaiming Your Work-Life Balance",
+			image: "static/images/blogs/2.png",
+			url: "view-blog-1.html" },
+		{
+			id: 2,
+			title: "The Hidden Grief of Life Transitions: Even “Good” Changes Are Hard",
+			image: "static/images/blogs/5.png",
+			url: "view-blog-2.html" }
 	];
 	if (RUN_ON_SERVER) {
 		dataInput.forEach((item, index) => {
@@ -71,7 +84,6 @@
 			<img id="footerLogo" class="header-footer" src="static/images/Main Site - Website Footer.png" style=" margin-top: 60px;"/>
 		</div>
 	</footer>
-	<br />
 
 	<script>
 		document.addEventListener('DOMContentLoaded', function () {

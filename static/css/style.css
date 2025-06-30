@@ -332,3 +332,7 @@ a.customLink:visited {
 	background-color: #cccccc;
 	cursor: not-allowed;
 }
+
+#body-content {
+	color: #4d404a;
+}
