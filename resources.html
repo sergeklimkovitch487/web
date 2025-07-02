@@ -46,58 +46,74 @@
 <link rel="stylesheet" href="static/css/blogs-resources-common.css">
 <script>
 	var RUN_ON_SERVER = false;
-    const dataInput = [
-        { id: 1, title: "Resource 1", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 2, title: "Resource 2", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 3, title: "Resource 3", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 4, title: "Resource 4", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 5, title: "Resource 5", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 6, title: "Resource 6", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 7, title: "Resource 7", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 8, title: "Resource 8", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 9, title: "Resource 9", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 10, title: "Resource 10", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 11, title: "Resource 11", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 12, title: "Resource 12", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 13, title: "Resource 13", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 14, title: "Resource 14", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 15, title: "Resource 15", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 16, title: "Resource 16", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 17, title: "Resource 17", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 18, title: "Resource 18", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 19, title: "Resource 19", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 20, title: "Resource 20", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 21, title: "Resource 21", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 22, title: "Resource 22", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 23, title: "Resource 23", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 24, title: "Resource 24", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 25, title: "Resource 25", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 26, title: "Resource 26", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 27, title: "Resource 27", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 28, title: "Resource 28", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 29, title: "Resource 29", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 30, title: "Resource 30", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 31, title: "Resource 31", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 32, title: "Resource 32", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 33, title: "Resource 33", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 34, title: "Resource 34", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 35, title: "Resource 35", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 36, title: "Resource 36", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 37, title: "Resource 37", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 38, title: "Resource 38", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 39, title: "Resource 39", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 40, title: "Resource 40", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 41, title: "Resource 41", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 42, title: "Resource 42", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 43, title: "Resource 43", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 44, title: "Resource 44", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 45, title: "Resource 45", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 46, title: "Resource 46", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 47, title: "Resource 47", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 48, title: "Resource 48", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 49, title: "Resource 49", image: "C:/Users/Family/Pictures/Circled 4.jpg" },
-        { id: 50, title: "Resource 50", image: "C:/Users/Family/Pictures/Circled 4.jpg" }
-    ];
+	const dataInput = [
+		{
+			title: "Pregnancy & Mental Health: A Supportive Resource Guide",
+			image: "static/images/resources/0.png",
+			url: "view-resource-0.html"
+		},
+		{
+			title: "Postpartum & Mental Health: A Supportive Resource Guide",
+			image: "static/images/resources/5.png",
+			url: "view-resource-1.html"
+		},
+		{
+			title: "Parenting & Mental Health: A Supportive Resource Guide",
+			image: "static/images/resources/10.png",
+			url: "view-resource-2.html"
+		},
+		{
+			title: "Chronic Illness: A Supportive Resource Guide",
+			image: "static/images/resources/15.png",
+			url: "view-resource-3.html"
+		},
+		{
+			title: "Chronic Pain: A Supportive Resource Guide",
+			image: "static/images/resources/50.png",
+			url: "view-resource-4.html"
+		},
+		{
+			title: "Caring for a Loved One: A Supportive Resource Guide",
+			image: "static/images/resources/20.png",
+			url: "view-resource-10.html"
+		},
+		{
+			title: "Navigating Existential Issues: A Supportive Resource Guide",
+			image: "static/images/resources/25.png",
+			url: "view-resource-5.html"
+		},
+		{
+			title: "Anxiety: A Supportive Resource Guide",
+			image: "static/images/resources/30.png",
+			url: "view-resource-6.html"
+		},
+		{
+			title: "Work-Life Balance: A Supportive Resource Guide",
+			image: "static/images/resources/35.png",
+			url: "view-resource-7.html"
+		},
+		{
+			title: "Perfectionism: A Supportive Resource Guide",
+			image: "static/images/resources/40.png",
+			url: "view-resource-8.html"
+		},
+		{
+			title: "2SLGBTQIA+: A Supportive Resource Guide",
+			image: "static/images/resources/45.png",
+			url: "view-resource-9.html"
+		},
+
+	];
+	function parseResourceNumber(filename) {
+		const match = filename.match(/view-resource-(\d+)\.html/);
+		return match ? parseInt(match[1], 10) : null;
+	}
+	if (RUN_ON_SERVER) {
+		dataInput.forEach((item, index) => {
+			var num = parseResourceNumber(item.url)
+			item.url = `view-resource?id=${num}`;
+		});
+	}
 
 
 </script>

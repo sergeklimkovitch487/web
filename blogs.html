@@ -48,25 +48,27 @@
 	var RUN_ON_SERVER = false;
 	const dataInput = [
 		{ 
-			id: 0, 
 			title: "Your First Therapy Session: What to Expect and How to Prepare", 
 			image: "static/images/blogs/0.png",
 			url: "view-blog-0.html"
 		},
 		{
-			id: 1,
 			title: "When the Lines Blur: Reclaiming Your Work-Life Balance",
 			image: "static/images/blogs/2.png",
 			url: "view-blog-1.html" },
 		{
-			id: 2,
 			title: "The Hidden Grief of Life Transitions: Even \"Good\" Changes Are Hard",
 			image: "static/images/blogs/5.png",
 			url: "view-blog-2.html" }
 	];
+	function parseResourceNumber(filename) {
+		const match = filename.match(/view-blog-(\d+)\.html/);
+		return match ? parseInt(match[1], 10) : null;
+	}
 	if (RUN_ON_SERVER) {
 		dataInput.forEach((item, index) => {
-			item.url = `view-blog?id=${index}`;
+			var num = parseResourceNumber(item.url)
+			item.url = `view-blog?id=${num}`;
 		});
 	}
 	console.log(dataInput);
